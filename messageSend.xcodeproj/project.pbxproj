@@ -13,6 +13,9 @@
 		FAF5773520A42DCB00E69D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF5773420A42DCB00E69D82 /* Assets.xcassets */; };
 		FAF5773820A42DCB00E69D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF5773620A42DCB00E69D82 /* LaunchScreen.storyboard */; };
 		FAF5773B20A42DCB00E69D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5773A20A42DCB00E69D82 /* main.m */; };
+		FAF5774320A42DDD00E69D82 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5774220A42DDD00E69D82 /* Person.m */; };
+		FAF5774620A445F400E69D82 /* MKPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5774520A445F400E69D82 /* MKPerson.m */; };
+		FAF5774920A5291900E69D82 /* NSObject+kvo.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5774820A5291900E69D82 /* NSObject+kvo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		FAF5773720A42DCB00E69D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF5773920A42DCB00E69D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF5773A20A42DCB00E69D82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAF5774120A42DDD00E69D82 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FAF5774220A42DDD00E69D82 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FAF5774420A445F400E69D82 /* MKPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKPerson.h; sourceTree = "<group>"; };
+		FAF5774520A445F400E69D82 /* MKPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKPerson.m; sourceTree = "<group>"; };
+		FAF5774720A5291900E69D82 /* NSObject+kvo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+kvo.h"; sourceTree = "<group>"; };
+		FAF5774820A5291900E69D82 /* NSObject+kvo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+kvo.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				FAF5773620A42DCB00E69D82 /* LaunchScreen.storyboard */,
 				FAF5773920A42DCB00E69D82 /* Info.plist */,
 				FAF5773A20A42DCB00E69D82 /* main.m */,
+				FAF5774120A42DDD00E69D82 /* Person.h */,
+				FAF5774220A42DDD00E69D82 /* Person.m */,
+				FAF5774420A445F400E69D82 /* MKPerson.h */,
+				FAF5774520A445F400E69D82 /* MKPerson.m */,
+				FAF5774720A5291900E69D82 /* NSObject+kvo.h */,
+				FAF5774820A5291900E69D82 /* NSObject+kvo.m */,
 			);
 			path = messageSend;
 			sourceTree = "<group>";
@@ -141,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF5774920A5291900E69D82 /* NSObject+kvo.m in Sources */,
 				FAF5773020A42DCA00E69D82 /* ViewController.m in Sources */,
+				FAF5774620A445F400E69D82 /* MKPerson.m in Sources */,
 				FAF5773B20A42DCB00E69D82 /* main.m in Sources */,
+				FAF5774320A42DDD00E69D82 /* Person.m in Sources */,
 				FAF5772D20A42DCA00E69D82 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +303,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCEG8YEA7G;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = messageSend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +322,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCEG8YEA7G;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = messageSend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
